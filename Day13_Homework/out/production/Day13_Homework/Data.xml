@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<persons> 
+  <person name="响当当" userName="xdd" passWord="123456" job="Worker"/>  
+  <person name="小叮当" userName="xiaodd" passWord="123456" job="Boss"/>  
+  <person name="2" userName="3" passWord="1" job="Worker"/>
+</persons>

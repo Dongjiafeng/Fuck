@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<persons> 
+  <person username="xdd" name="小弟弟" passsword="123456" job="Worker"/>
+</persons>
