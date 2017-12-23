@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            /*background-color: aqua;*/
+        }
+        .top{
+            height: 10%;
+            width: 100%;
+            /*background-color: red;*/
+        }
+        .top ul{
+            list-style: none;
+            float: right;
+            position: relative;
+            top: 18px;
+        }
+        .top ul li{
+            float: left;
+            font-size: 22px;
+            padding-right: 15px;
+        }
+        .bottom{
+            height: 90%;
+            width: 100%;
+            float: right;
+            background-color: wheat;
+        }
+        .bottom img{
+            position: relative;
+            left: 200px;
+            top:200px;
+        }
+        .box{
+            width: 560px;
+            height: 665px;
+            background-color: azure;
+            position: relative;
+            left: 55%;
+            top:-300px;
+        }
+        .box h1{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .box form input{
+            width: 500px;
+            height: 50px;
+            margin-top: 50px;
+            position: relative;
+            left: 30px;
+            font-size: 25px;
+        }
+        .box form input#s1{
+            margin-top: 200px;
+        }
+        /*.box form input#s{*/
+            /*width: 10px;*/
+            /*height: 10px;*/
+        /*}*/
+        .box form span{
+            /*position: relative;*/
+            margin-left: 40px;
+
+        }
+        .box form span#s2{
+            margin-left: 260px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="../img/12312.png">
+        <ul>
+            <li>网易云首页</li>
+            <li>|</li>
+            <li>帮助文档</li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <img src="../img/123123.png">
+        <div class="box">
+            <h1>网易云登录</h1>
+            <form>
+                <input type="text" placeholder="网易云账号/网易云邮箱账号"><br/>
+                <input type="password"
+                       placeholder="登录密码">
+                <!--<input type="checkbox" id="s">-->
+                <!--<label>同意并遵守 <a href="#">《服务条款》</a> </label>-->
+                <input type="submit" value="登   录" id="s1">
+                <span>还没有账号?<a href="#">免费注册</a></span>
+                <span id="s2"><a href="#">忘记密码</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
