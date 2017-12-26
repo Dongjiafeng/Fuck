@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .top{
+            height: 10%;
+            width: 100%;
+        }
+        .buttom{
+            height: 888px;
+            width: 100%;
+            background-color: aliceblue;
+        }
+        .buttom1{
+            height: 750px;
+            width: 80%;
+            background-color: azure;
+            position: relative;
+            top:138px;
+            left: 10%;
+        }
+        .buttom2{
+            height: 650px;
+            width: 680px;
+            position: relative;
+            left: 27%;
+            top: 8%;
+        }
+        .buttom2 h1{
+            text-align: center;
+            color: blueviolet;
+        }
+        .buttom2 form label{
+            font-size: 23px;
+            position: relative;
+            left: 20px;
+        }
+        .buttom2 form label#i{
+            position: relative;
+            top: 20px;
+        }
+        .buttom2 form label#i2{
+            position: relative;
+            top: 110px;
+        }
+        .buttom2 form label#i3{
+            position: relative;
+            top: 285px;
+            font-size: 16px;
+            left: 90px;
+        }
+        .buttom2 form input{
+            position: relative;
+
+        }
+        .buttom2 form input#t{
+            position: relative;
+            top: 20px;
+            width: 500px;
+            height: 50px;
+            left: 25px;
+            width: 500px;
+            height: 50px;
+            font-size: 25px;
+        }
+        .buttom2 form input#t2{
+            position: relative;
+            top: 110px;
+            left: 25px;
+            width: 500px;
+            height: 50px;
+            font-size: 25px;
+          }
+        .buttom2 form input#wowo{
+            position: relative;
+            top: 300px;
+            left: 90px;
+            width: 500px;
+            height: 50px;
+            font-size: 25px;
+            background-color: darkslateblue;
+
+        }
+        .buttom2 form input#t4{
+            position: relative;
+            top: 290px;
+            left: 90px;
+            width: 18px;
+            height: 18px;
+        }
+        .buttom2 form h4{
+            margin-left: 120px;
+            margin-top: 20px;
+            visibility: hidden;
+
+            color: red;
+        }
+        .buttom2 form span{
+            margin-left: 120px;
+            margin-top: 80px;
+            visibility: hidden;
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        function showOnfocus(ele) {
+            var haha = document.getElementById("haha");
+
+            haha.style.visibility = "visible"
+
+        }
+        function showOnblur(ele) {
+            var h1 = document.getElementById("haha");
+            h1.style.visibility = "hidden"
+
+        }
+
+        function showOnfocus1(ele) {
+            var hehe = document.getElementById("hehe");
+
+            hehe.style.visibility = "visible"
+
+        }
+        function showOnblur1(ele) {
+            var h1 = document.getElementById("hehe");
+            h1.style.visibility = "hidden"
+
+        }
+        function showback(ele) {
+            var div1 = document.getElementById("wowo");
+            div1.style.background = "red"
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div class="top">
+        <img src="../img/4.png">
+    </div>
+    <div class="buttom">
+        <div class="buttom1" id="div1">
+            <div class="buttom2">
+                <h1>邮箱注册</h1>
+                <form action="" method="">
+                    <label id="i">邮箱地址</label>
+                    <input type="text" id="t" onfocus="showOnfocus(this)" onblur="showOnblur(this)"><br>
+                    <h4 id="haha" >请输入邮箱帐号</h4>
+                    <label id="i2">登录密码</label>
+                    <input type="password" id="t2" ><br/>
+                    <span id="hehe" onfocus="showOnfocus1(this)" onblur="showOnblur1(this)">密码必须是8个位数</span>
+                    <input type="checkbox" id="t4">
+                    <label id="i3">同意并遵守《服务条款》</label>
+                    <input type="button" value="下一步" id="wowo" onclick="showback(this)">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
