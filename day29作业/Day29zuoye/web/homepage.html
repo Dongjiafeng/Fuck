@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <script src="libs/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<button>点我</button>
+<table>
+    <tr>
+        <td>用户</td>
+        <td>密码</td>
+    </tr>
+
+</table>
+</body>
+<script type="text/javascript">
+    $('button').click(function () {
+        $.getJSON("http://localhost:8080/show",function (data, status) {
+            if(status == "success"){
+
+                $.each(data,function (index, obj) {
+
+                    var username = obj['username'];
+                    var password = obj['password'];
+
+                    $('table').append(
+                        $('<tr>').append(
+                            $('<td>').text(username)
+                        ).append(
+                            $('<td>').text(password)
+                        )
+                    )
+                })
+            }
+        })
+    })
+</script>
+</html>
