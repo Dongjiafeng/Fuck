@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="day18">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="day19"/>
+    <schema id="4" parent="1" name="day20"/>
+    <schema id="5" parent="1" name="famliy"/>
+    <schema id="6" parent="1" name="game"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="lol"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="person"/>
+    <schema id="11" parent="1" name="student"/>
+    <schema id="12" parent="1" name="test"/>
+    <schema id="13" parent="1" name="zuoye"/>
+    <schema id="14" parent="1" name="day29">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="15" parent="1" name="day30">
+      <Visible>1</Visible>
+    </schema>
+    <table id="16" parent="14" name="user"/>
+    <table id="17" parent="15" name="books"/>
+    <column id="18" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="16" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="20" parent="16" name="password">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="21" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="17" name="bookName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="24" parent="17" name="author">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="25" parent="17" name="price">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="26" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
