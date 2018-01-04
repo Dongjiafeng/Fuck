@@ -118,8 +118,21 @@
     <div class="box">
       <h1>唐僧登录</h1>
       <form action="show" method="post">
-        <input type="text"  name = "username" id="haha" placeholder="唐僧账号/唐僧邮箱账号"
-               onfocus="showOnfocus(this)" onblur="showOnblur(this)">
+
+        <input type="text"  name = "username" id="haha"
+               onfocus="showOnfocus(this)" onblur="showOnblur(this)" value="
+                <%
+               Cookie[] cookies = request.getCookies();
+               if (cookies!=null){for (Cookie cookie : cookies) {
+                 if (cookie.getName().equals("username")){
+                     String value = cookie.getValue();
+                     out.write(value);
+                 }
+               }}else {
+                     out.write("    ");
+                 }
+               %>">
+
 
         <br/>
         <input type="password" name="password" placeholder="登   录密码">
