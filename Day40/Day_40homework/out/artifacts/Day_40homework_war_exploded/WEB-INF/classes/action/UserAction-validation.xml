@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.dtd">
+<validators>
+    <field name="user.username">
+        <field-validator type="requiredstring">
+            <message>名字不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.password">
+        <field-validator type="requiredstring">
+            <message>密码不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.email">
+        <field-validator type="email">
+            <message>必须是有用的邮箱</message>
+        </field-validator>
+        <field-validator type="requiredstring">
+            <message>邮箱不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.phone">
+        <field-validator type="regex">
+            <param name="regexExpression"></param>
+            <message><![CDATA[[1][34578]\d{9}]]></message>
+        </field-validator>
+        <field-validator type="requiredstring">
+            <message>手机号不能为空</message>
+        </field-validator>
+    </field>
+    <field name="repassword">
+        <field-validator type="fieldexpression">
+            <param name="expression"><![CDATA[repassword==password]]></param>
+            <message>两次密码不一致</message>
+        </field-validator>
+    </field>
+
+</validators>
